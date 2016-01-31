@@ -6,3 +6,10 @@ A user should be able to:
 1-Grab a cookie flavor, which increments their cookie count by one
 2-Come back to the page and see how many cookies they've grabbed so far
 3-Clear their cookie count completely in case they're feeling guilty
+
+JS
+1-need to set cookies
+2-need to count up by 1 from 0
+3-have a click function add the increment
+4-have the total counted
+5-click to remove all counts
