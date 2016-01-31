@@ -24,30 +24,30 @@ $(document).ready(function(){
 		su = parseInt(0)
 	} else {
 		su = Cookies.get("sugar")
-	}
+	};
 
 	$("#sugar-c").on("click", function(){
 		su = parseInt(su) + 1 ;
 		Cookies.set("oreo", su);
-		$("#o-num").text(Cookies.get("oreo"));
+		$("#s-num").text(Cookies.get("sugar"));
 	});
 
 
 
 
 
-	$("#cc-num").text(Cookies.get("ChocolateChip"))
+	$("#cc-num").text(Cookies.get("chocolatechip"))
 
 		if (Cookies.get("chocolatechip") == 0){
 		ch = parseInt(0)
 	} else {
 		ch = Cookies.get("chocolatechip")
-	}
+	};
 
 	$("#choco-c").on("click", function(){
 		ch = parseInt(ch) + 1 ;
 		Cookies.set("oreo", ch);
-		$("#o-num").text(Cookies.get("oreo"));
+		$("#cc-num").text(Cookies.get("chocolatechip"));
 	});
 
 
