@@ -1,56 +1,78 @@
 $(document).ready(function(){
 	
-	$("#o-num").text(Cookies.get("oreo"))
-
-		if (Cookies.get("oreo") == 0){
-		or = parseInt(0)
+	if (Cookies.get("oreo-c")== null){
+		oNum = 0;
 	} else {
-		or = Cookies.get("oreo")
+		oNum = parseInt(Cookies.get("oreo-c"));
 	}
 
 	$("#oreo-c").on("click", function(){
-		or = parseInt(or) + 1 ;
-		Cookies.set("oreo", or);
-		$("#o-num").text(Cookies.get("oreo"));
+		oNum = oNum + 1 
+		Cookies.set("oreo-c", oNum);
+		document.getElementById("oNum").innerHTML = Cookies.get("oreo-c");
 	});
 
 
 
-
-
-	$("#s-num").text(Cookies.get("sugar"))
-
-		if (Cookies.get("sugar") == 0){
-		su = parseInt(0)
+	if (Cookies.get("sugar-c")== null){
+		sNum = 0;
 	} else {
-		su = Cookies.get("sugar")
-	};
+		sNum = parseInt(Cookies.get("sugar-c"));
+	}
 
 	$("#sugar-c").on("click", function(){
-		su = parseInt(su) + 1 ;
-		Cookies.set("oreo", su);
-		$("#s-num").text(Cookies.get("sugar"));
+		sNum = sNum + 1
+		Cookies.set("sugar-c", sNum);
+		document.getElementById("sNum").innerHTML = Cookies.get("sugar-c");
 	});
 
 
 
-
-
-	$("#cc-num").text(Cookies.get("chocolatechip"))
-
-		if (Cookies.get("chocolatechip") == 0){
-		ch = parseInt(0)
+	if (Cookies.get("choco-c")== null){
+		cNum = 0;
 	} else {
-		ch = Cookies.get("chocolatechip")
-	};
+		cNum = parseInt(Cookies.get("choco-c"));
+	}
 
 	$("#choco-c").on("click", function(){
-		ch = parseInt(ch) + 1 ;
-		Cookies.set("oreo", ch);
-		$("#cc-num").text(Cookies.get("chocolatechip"));
+		cNum = cNum + 1 
+		Cookies.set("choco-c", cNum);
+		document.getElementById("cNum").innerHTML = Cookies.get("choco-c");
 	});
 
 
 
+	$("#clear").on("click", function(){
+		oNum = 0
+		Cookies.set("oreo-c", oNum);
+		document.getElementById("oNum").innerHTML = Cookies.get("oreo-c");
+		sNum = 0
+		Cookies.set("sugar-c", sNum);
+		document.getElementById("sNum").innerHTML = Cookies.get("sugar-c");
+		cNum = 0
+		Cookies.set("choco-c", cNum);
+		document.getElementById("cNum").innerHTML = Cookies.get("choco-c");
+		
+	})
 		
 });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
