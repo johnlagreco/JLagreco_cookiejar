@@ -1,9 +1,11 @@
 $(document).ready(function(){
 	
+
 	if (Cookies.get("oreo-c")== null){
 		oNum = 0;
 	} else {
 		oNum = parseInt(Cookies.get("oreo-c"));
+		document.getElementById("oNum").innerHTML = Cookies.get("oreo-c");
 	}
 
 	$("#oreo-c").on("click", function(){
@@ -18,6 +20,7 @@ $(document).ready(function(){
 		sNum = 0;
 	} else {
 		sNum = parseInt(Cookies.get("sugar-c"));
+		document.getElementById("sNum").innerHTML = Cookies.get("sugar-c");
 	}
 
 	$("#sugar-c").on("click", function(){
@@ -32,6 +35,7 @@ $(document).ready(function(){
 		cNum = 0;
 	} else {
 		cNum = parseInt(Cookies.get("choco-c"));
+		document.getElementById("cNum").innerHTML = Cookies.get("choco-c");
 	}
 
 	$("#choco-c").on("click", function(){
@@ -56,23 +60,3 @@ $(document).ready(function(){
 	})
 		
 });
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
