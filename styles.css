@@ -1,0 +1,26 @@
+body{
+	/*margin: 100%;*/
+	text-align: center;
+}
+
+h1, h2, h4, p{
+	font-family: tahoma;
+}
+
+#odiv, #sdiv, #cdiv{
+	margin: 0 auto;
+	float: left;
+	display: inline;
+}
+
+#sdiv, #cdiv{
+	margin-left: 12%;
+}
+
+#cleardiv{
+	display: inline-block;
+}
+
+#footer{
+	clear: both;
+}
