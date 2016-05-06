@@ -3,7 +3,12 @@ body{
 	text-align: center;
 }
 
-h1, h2, h4, p{
+h1, h2, h3, p{
+	font-family: tahoma;
+}
+
+#oNum, #sNum, #cNum{
+	font-size: 150%;
 	font-family: tahoma;
 }
 
